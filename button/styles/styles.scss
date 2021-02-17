@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f2f2f2;
+  color: #4f4f4f;
+  font-family: 'Noto Sans JP', sans-serif;
+  display: grid;
+  place-items: center;
+}
+.Container {
+  display: grid;
+  place-items: center;
+  h1 {
+    margin: 18px 0;
+  }
+}
+.btn {
+  margin: 24px 0;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #3f3f3f;
+  background-color: #e0e0e0;
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    background-color: #aeaeae;
+  }
+  &:disabled {
+    background-color: #e0e0e0;
+    box-shadow: unset;
+    color: #9e9e9e;
+    cursor: not-allowed;
+  }
+}
+.withShadow {
+  box-shadow: 0px 2px 3px 0px rgba(33, 33, 33, 0.2);
+}
+.noShadow {
+  box-shadow: none;
+  background-color: #3d5afe;
+  color: white;
+}
+.outline {
+  border: 1px solid #3d5afe;
+  color: #3d5afe;
+  background-color: white;
+  &:hover,
+  &:focus {
+    background: rgba(41, 98, 255, 0.1);
+  }
+}
+.text {
+  border: 0;
+  background-color: #f2f2f2;
+  box-shadow: none;
+  color: #3d5afe;
+  &:hover,
+  &:focus {
+    background: rgba(41, 98, 255, 0.1);
+  }
+  &:disabled {
+    background-color: #f2f2f2;
+    box-shadow: unset;
+    color: #9e9e9e;
+  }
+}
+.blue {
+  background-color: #2962ff;
+  color: white;
+  display: flex;
+  align-items: center;
+  span:nth-of-type(2) {
+    margin: 0 8px;
+  }
+}
+.sm {
+  padding: 5px 8px;
+}
+.md {
+  padding: 10px 18px;
+}
+.lg {
+  padding: 16px 24px;
+}
+.primary,
+.secondary,
+.danger {
+  color: white;
+}
+.primary {
+  background-color: #2962ff;
+  &:hover {
+    background: #0039cb;
+  }
+}
+.secondary {
+  background: #455a64;
+  &:hover {
+    background: #1c313a;
+  }
+}
+.danger {
+  background: #d32f2f;
+  &:hover {
+    background: #9a0007;
+  }
+}
+footer {
+  text-align: center;
+  padding: 15px;
+  a {
+    margin-bottom: 2rem;
+  }
+  a:visited {
+    color: #4f4f4f;
+  }
+  a:hover {
+    color: darken(white, $amount: 55);
+  }
+}
