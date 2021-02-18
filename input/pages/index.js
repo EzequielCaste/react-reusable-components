@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { Footer } from '../components/Footer';
 import { Input } from '../components/Input';
 
 export default function Home() {
@@ -37,6 +38,7 @@ export default function Home() {
       <Input fullWidth />
       <code>{`<Input multiline row='4' />`}</code>
       <Input multiline row="4" />
+      <Footer />
     </div>
   );
 }
