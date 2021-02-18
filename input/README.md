@@ -12,7 +12,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://devchallenges.io/solutions/QAmP1VhRqM9VaxQJOcIb">
       Solution
     </a>
     <span> | </span>
@@ -55,17 +55,17 @@ The challenge was to create a reusable input component with different states (ho
 
 This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/TSqutYM4c5WtluM7QzGp) was to build an application to complete the given user stories.
 
-- [ ] User story: I can see error state
-- [ ] User story: I can choose to disable input
-- [ ] User story: I can choose to have helper text
-- [ ] User story: I can choose to have an icon on the left or right (Use Google Icon and at least 5 variants)
-- [ ] User story: I can have different input sizes
-- [ ] User story: I can have different colors
-- [ ] User story: I can choose to have input take the width of the parent
-- [ ] User story: I can have multiline input like a textarea
-- [ ] User story: When I hover or focus, I can see visual indicators
-- [ ] User story: I can still access all input attributes
-- [ ] User story (optional): Show input in a similar way like the design or use Storybook. Otherwise, showing the input in multiple states is enough
+- [x] User story: I can see error state
+- [x] User story: I can choose to disable input
+- [x] User story: I can choose to have helper text
+- [x] User story: I can choose to have an icon on the left or right (Use Google Icon and at least 5 variants)
+- [x] User story: I can have different input sizes
+- [x] User story: I can have different colors
+- [x] User story: I can choose to have input take the width of the parent
+- [x] User story: I can have multiline input like a textarea
+- [x] User story: When I hover or focus, I can see visual indicators
+- [x] User story: I can still access all input attributes
+- [x] User story (optional): Show input in a similar way like the design or use Storybook. Otherwise, showing the input in multiple states is enough
 
 ## How To Use
 
