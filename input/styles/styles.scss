@@ -1,0 +1,131 @@
+$gray: #828282;
+$black: #333;
+$blue: #2962ff;
+$red: #d32f2f;
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #fff;
+  color: #4f4f4f;
+  font-family: 'Noto Sans JP', sans-serif;
+  display: grid;
+  place-items: center;
+}
+.Container {
+  display: grid;
+  gap: 16px;
+  margin: 16px 0;
+  h1 {
+    margin: 18px 0;
+  }
+}
+textarea {
+  width: 200px;
+  border-radius: 8px;
+  border: 1px solid $gray;
+  font-size: 14px;
+  color: $gray;
+  margin: 5px 0;
+}
+.input {
+  width: 200px;
+  outline: none;
+  margin: 5px 0;
+  border-radius: 8px;
+  border: 1px solid $gray;
+  font-size: 14px;
+  color: $gray;
+  &:disabled {
+    cursor: not-allowed;
+    background-color: #f2f2f2;
+  }
+}
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  input:disabled {
+    border-color: #e0e0e0;
+  }
+  &:hover {
+    label {
+      color: $black;
+    }
+    input {
+      border-color: $black;
+    }
+    input:disabled {
+      border-color: #e0e0e0;
+    }
+    .disabled {
+      color: unset;
+    }
+  }
+  &:focus-within {
+    label {
+      color: $blue;
+    }
+    label.red {
+      color: $red;
+    }
+    input {
+      border-color: $blue;
+    }
+    .red {
+      border-color: $red;
+    }
+  }
+  span {
+    margin-top: -5px;
+    font-size: 10px;
+    color: $gray;
+  }
+  .material-icons {
+    position: absolute;
+    padding-top: 50px;
+    min-width: 40px;
+    font-size: 20px;
+    padding-left: 10px;
+  }
+}
+label.red,
+span.red {
+  color: $red;
+  &:focus {
+    color: $red;
+  }
+}
+.fullWidth {
+  width: 100%;
+}
+
+.red {
+  border-color: $red;
+}
+.sm {
+  padding: 8px 8px;
+}
+.md {
+  padding: 20px 18px;
+}
+.lg {
+  padding: 18px 24px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  a {
+    margin-bottom: 2rem;
+  }
+  a:visited {
+    color: #4f4f4f;
+  }
+  a:hover {
+    color: darken(white, $amount: 55);
+  }
+}
